@@ -1,0 +1,148 @@
+<!-- res/layout/activity_mastermind.xml -->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/colorGray">
+
+    <!-- Back, Info, and Gear Buttons -->
+    <LinearLayout
+        android:id="@+id/infoSettingsContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="16dp">
+
+        <!-- Back Button -->
+        <ImageButton
+            android:id="@+id/backButton"
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:background="@drawable/ic_back" />
+
+        <!-- Info Button -->
+        <ImageButton
+            android:id="@+id/infoButton"
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:layout_marginLeft="275dp"
+            android:background="@drawable/ic_info" />
+
+        <!-- Gear Button -->
+        <ImageButton
+            android:id="@+id/gearButton"
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:background="@drawable/ic_gear"
+            android:layout_marginStart="16dp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/circlesContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="4dp"
+        android:layout_below="@+id/infoSettingsContainer">
+
+
+        <!-- Dynamic circle rows will be added here -->
+    </LinearLayout>
+
+    <!-- Color Buttons -->
+    <LinearLayout
+        android:id="@+id/colorButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/circlesContainer"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center">
+
+        <!-- Color Button 1 -->
+        <Button
+            android:id="@+id/colorButton1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@android:color/holo_red_light" />
+
+        <!-- Color Button 2 -->
+        <Button
+            android:id="@+id/colorButton2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@android:color/holo_blue_light"/>
+
+        <!-- Color Button 1 -->
+        <Button
+            android:id="@+id/colorButton3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@color/colorYellow"/>
+
+        <!-- Color Button 2 -->
+        <Button
+            android:id="@+id/colorButton4"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@color/colorGreen"/>
+
+        <!-- Color Button 1 -->
+        <Button
+            android:id="@+id/colorButton5"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@color/colorOrange"/>
+
+        <!-- Color Button 2 -->
+        <Button
+            android:id="@+id/colorButton6"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@color/colorPink"/>
+
+        <!-- Add more color buttons as needed -->
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/guessButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_below="@+id/colorButtons"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="20dp">
+        <!-- Make Guess Button -->
+        <Button
+            android:id="@+id/makeGuessButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Make Guess"
+            android:layout_below="@+id/colorButtons"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"/>
+
+
+        <!-- Clear Button -->
+        <Button
+            android:id="@+id/clearButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Clear"
+            android:layout_below="@+id/makeGuessButton"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"/>
+    </LinearLayout>
+
+
+</RelativeLayout>
